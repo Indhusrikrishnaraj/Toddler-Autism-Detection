@@ -37,10 +37,7 @@ git clone https://github.com/Indhusrikrishnaraj/toddler-autism-detection.git
 cd toddler-autism-detection
 pip install -r requirements.txt
 
-##  Run the notebook
-jupyter notebook notebook.ipynb
-
-##  OR run the dashboard
+##  Run the dashboard
 python app.py
 
  Visual Dashboard (Dash):
@@ -114,8 +111,7 @@ python app.py
 ---
 
 ##  Important Notes
-
-- Works in Jupyter + Dash  
+ 
 - Designed for local runs; no cloud deployment included (yet)  
 - Tested on Python 3.10  
 
