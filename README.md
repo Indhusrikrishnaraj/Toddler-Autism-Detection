@@ -37,10 +37,10 @@ git clone https://github.com/Indhusrikrishnaraj/toddler-autism-detection.git
 cd toddler-autism-detection
 pip install -r requirements.txt
 
-## Run the notebook
+##  Run the notebook
 jupyter notebook notebook.ipynb
 
-## OR run the dashboard
+##  OR run the dashboard
 python app.py
 
  Visual Dashboard (Dash):
@@ -81,6 +81,47 @@ python app.py
 
 ---
 
+##  Preprocessing Highlights
+
+- Categorical columns encoded with LabelEncoder  
+- Missing values handled and visualized  
+- Features engineered (e.g., `sum_score`, `ind`)  
+- Correlation heatmaps and pairplots generated  
+
+---
+
+##  Data Summary
+
+- 1054 entries, 19 columns  
+- Balanced after oversampling with `RandomOverSampler`  
+- Strong correlation (0.81) between Qchat score and ASD trait  
+
+---
+
+##  Model Performance Notes
+
+- Logistic Regression and XGBoost reached perfect accuracy  
+- SVM performed slightly lower on validation set (~97.9%)  
+- Feature scaling improved convergence and performance  
+- Confusion matrix and ROC AUC used for evaluation  
+
+---
+
+##  Target Column
+
+- `Class/ASD Traits` — binary classification target (0 = No ASD Traits, 1 = Yes ASD Traits)  
+
+---
+
+##  Important Notes
+
+- Works in Jupyter + Dash  
+- Designed for local runs; no cloud deployment included (yet)  
+- Tested on Python 3.10  
+
+---
+
 ##  Inspiration
 
-Built to explore early detection of autism traits using ML, supporting accessible screening tools in pediatric healthcare.
+Created to support early detection of ASD traits in toddlers through interpretable machine learning insights and interactive visualizations for clinicians and parents.
+
